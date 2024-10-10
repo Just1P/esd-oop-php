@@ -8,10 +8,10 @@ class SetShippingMethodController
 		$order = $orderRepository->find();
 
         if (!$order) {
-			require_once './view/404.php';
+			require_once './order/view/404.php';
 			return;
 		}
 
-        require_once './view/set-shipping-method.php';
+        require_once './order/view/set-shipping-method.php';
     }
 }
